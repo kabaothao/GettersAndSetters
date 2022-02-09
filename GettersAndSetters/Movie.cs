@@ -50,7 +50,7 @@ namespace GettersAndSetters
 
 /*
 What is this class Movie for and why?
-Its basically modeling a movie inside of our program. So this is sort of like a templat for the movie data type. 
+Its basically modeling a movie inside of our program. So this is sort of like a template for the movie data type. 
 So every movie is going to have a title, a director, a Rating.
 
  */
