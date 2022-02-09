@@ -4,22 +4,24 @@
     {
         static void Main(string[] args)
         {
-            Movie avengers = new Movie("The Avengers", "Joss Whedon", "Dog"); //if you update PG-13 to Dog then you're going to get an invalid value which will be NR. thats because we have to gp through the setter.
-            Movie shref = new Movie("Shrek", "Adam Adamson", "PG");
+            Movie avengers = new Movie("The Avengers", "Joss Whedon", "Dog"); //if you update PG-13 to Dog then you're going to get an invalid value which will be NR. thats because we have to go through the setter.
+            Movie shref = new Movie("Shrek", "Adam Adamson", "R");
+            Movie harrypotter = new Movie("Harry Potter and the Sorcerer's Stone", "J. K. Rowling", "PG");
 
             Console.WriteLine(avengers.Rating); //so this is the first step to enforce ratings  we need to make the rating field private.
-            //avengers.rating = "Dog"; //this is going to yell at me because this is aprivate attribute. so its not going to let me do that. so that's the point of the setters.
+            //avengers.rating = "Dog"; //this is going to yell at me because this is a private attribute. so its not going to let me do that. so that's the point of the setters.
 
 
             //Example:
-            shref.Rating = "Dog";
+            //shref.Rating = "Dog";
             Console.WriteLine(shref.Rating); 
+            Console.WriteLine(harrypotter.Rating);
 
             Console.ReadLine();
 
 
             //G, PG, PG-13, R, NR lets say these are all the valid ratings that we can have for a movie.
-            //Also lets say we want to enforce these rules inside of this movie class. So we want all movies in our programs to only be able to have one of these ratings, and it can't have a rating, other than the ones that i specificed down here. 
+            //Also lets say we want to enforce these rules inside of this movie class. So we want all movies in our programs to only be able to have one of these ratings, and it can't have a rating, other than the ones that I specificed down here. 
             //So how do we enforce that? 
 
         }
